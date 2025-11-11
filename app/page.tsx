@@ -211,7 +211,7 @@ export default function AdsenseAnalyzerPage() {
 <div style={{ width: "100%", textAlign: "center", margin: "15px 0" }}>
   <ins
     className="adsbygoogle"
-    style={{ display: "block", width: "100%" }}
+    style={{ display: "block" }}
     data-ad-client="ca-pub-9591765421576424"
     data-ad-slot="6696348436"
     data-ad-format="auto"
@@ -219,11 +219,16 @@ export default function AdsenseAnalyzerPage() {
   ></ins>
   <script
     dangerouslySetInnerHTML={{
-      __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+      __html: `
+        if (typeof window !== 'undefined') {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      `,
     }}
   />
 </div>
 {/* ✅ 광고 영역 끝 */}
+
 
           <Card className="p-6 space-y-4">
             <div className="flex flex-wrap gap-8 justify-center text-center divide-x divide-border">
