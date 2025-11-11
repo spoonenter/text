@@ -36,7 +36,7 @@ const AdComponent: React.FC<AdComponentProps> = ({
     <ins
       className="adsbygoogle"
       style={{ display: "block", ...(style || {}) }}
-      data-ad-client={`ca-pub-${process.env.NEXT_PUBLIC_GAPID}`}
+      data-ad-client="ca-pub-9591765421576424"
       data-ad-slot={adSlot}
       data-ad-format={adFormat}
       data-ad-layout={adLayout}
