@@ -208,22 +208,22 @@ export default function AdsenseAnalyzerPage() {
         <div className="max-w-5xl mx-auto">
 
           {/* ✅ 광고 영역 시작 — 애드센스 승인콘텐츠 분석기 상단광고 */}
-  <div style={{ textAlign: "center", margin: "15px 0" }}>
-    <ins
-      className="adsbygoogle"
-      style={{ display: "block" }}
-      data-ad-client="ca-pub-9591765421576424"
-      data-ad-slot="6696348436"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    ></ins>
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-      }}
-    />
-  </div>
-  {/* ✅ 광고 영역 끝 */}
+<div style={{ width: "100%", textAlign: "center", margin: "15px 0" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block", width: "100%" }}
+    data-ad-client="ca-pub-9591765421576424"
+    data-ad-slot="6696348436"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+    }}
+  />
+</div>
+{/* ✅ 광고 영역 끝 */}
 
           <Card className="p-6 space-y-4">
             <div className="flex flex-wrap gap-8 justify-center text-center divide-x divide-border">
